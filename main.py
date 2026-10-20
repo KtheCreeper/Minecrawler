@@ -5,7 +5,7 @@ class game:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((550,550), pygame.RESIZABLE)
-        pygame.display.set_caption('Work-out tracker')
+        pygame.display.set_caption('Mine-crawler')
 
         
     
