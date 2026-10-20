@@ -6,8 +6,7 @@ class game:
         pygame.init()
         self.screen = pygame.display.set_mode((550,550))
         pygame.display.set_caption('Mine-crawler')
-
-        
+        self.font = pygame.Font("ProggyCleanCP.fon", 30)
     
     def run(self):
         running = True
@@ -18,7 +17,10 @@ class game:
                 if event.type == pygame.QUIT:
                     sys.exit(0)
 
-            self.screen.fill("white")
+            self.screen.fill("black")
+
+            text_surface = self.font.render("Test", False, (255,255,255))
+            self.screen.blit(text_surface, (0,0))
 
             pygame.display.flip()
             delta_time = clock.tick(60) / 1000
