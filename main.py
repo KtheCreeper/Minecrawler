@@ -4,7 +4,7 @@ import sys
 class game:
     def __init__(self):
         pygame.init()
-        self.screen = pygame.display.set_mode((550,550), pygame.RESIZABLE)
+        self.screen = pygame.display.set_mode((550,550))
         pygame.display.set_caption('Mine-crawler')
 
         
